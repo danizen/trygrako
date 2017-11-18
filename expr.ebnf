@@ -1,0 +1,15 @@
+start = expr;
+
+expr = term "+" expr
+       | term;
+
+term = factor "*" factor 
+       | factor; 
+
+factor = "(" expr ")"
+         |  const;
+
+const = integer;
+
+integer = /[0-9]+/;
+
