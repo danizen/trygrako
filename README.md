@@ -18,4 +18,7 @@ python expr.py data/valid
 python expr.py data/invalid
 ```
 
+## Alternative methods of parsing in Python
 
+The main alternative to Grako in python is to use pyparsing, where you express
+the grammar directly in Python.
